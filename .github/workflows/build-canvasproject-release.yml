@@ -118,7 +118,7 @@ jobs:
           . venv/bin/activate
           set -o pipefail
           python3 -u build-tools/ci-scripts/build-appimage.py 2>&1 | tee appimage.log
-          APP=$(ls _packaging/*.appimage _packaging/*.AppImage 2>/dev/null | head -1)
+          APP=$(find _packaging -maxdepth 1 -iname "*.appimage" -type f | head -1)
           test -n "$APP" || { ls -la _packaging || true; exit 1; }
           mkdir -p dist && cp "$APP" dist/CanvasProject.AppImage && chmod +x dist/CanvasProject.AppImage
           du -h dist/CanvasProject.AppImage
