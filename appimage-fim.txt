@@ -1,0 +1,250 @@
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_testclinic.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/xxlimited.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/cmath.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_pickle.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_elementtree.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_codecs_jp.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_decimal.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_testimportmultiple.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_codecs_tw.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_codecs_kr.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/termios.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/fcntl.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_sha2.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_datetime.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_interpqueues.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_codecs_cn.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_zoneinfo.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_posixshmem.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_statistics.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_csv.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/syslog.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_asyncio.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_bisect.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_interpchannels.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_heapq.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/binascii.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_ctypes_test.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_testexternalinspection.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_md5.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_opcode.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_xxtestfuzz.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/python3.13/lib-dynload/_testclinic_limited.cpython-313-x86_64-linux-gnu.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaresourcewidgets.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QmlWorkerScript.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Help.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QuickWidgets.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libffi.so.8 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Sql.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaimpex.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaexifcommon.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Test.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpng16.so.16 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaplugin.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libvpl.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libXdmcp.so.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxkbcommon-x11.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritacommand.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libmd.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libSDL2-2.0.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libIex-2_5.so.25 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libbrotlienc.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritalibpaintop.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libOpenEXRCore-3_4.so.33 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/liblzma.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libgomp.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libwebpdemux.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritalibbrush.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritatiffpsd.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKSeExpr.so.4 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5GuiAddons.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QuickShapes.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5ItemViews.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpcre2-16.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkeyutils.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libsharpyuv.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libexiv2.so.28 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libwebpmux.so.3 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libglib-2.0.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Gui.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libswresample.so.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/liblcms2.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Designer.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libsasl2.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libtasn1.so.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QuickTemplates2.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libbsd.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpython3.13.so.1.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libtheoradec.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libIlmImf-2_5.so.25 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpcre.so.3 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkrb5.so.3 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-shm.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-keysyms.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxkbcommon.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libIex-3_4.so.33 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-sync.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libvorbisfile.so.3.3.8 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libvorbis.so.0.4.9 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritapsd.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libImath-3_2.so.30 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libmp3lame.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5KDcraw.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libgcrypt.so.20 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libtheoraenc.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libIlmThread-3_4.so.33 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libp11-kit.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libunistring.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libswscale.so.9 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-xkb.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libturbojpeg.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libicuuc.so.70 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libraw.so.25 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5I18n.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libmlt++-7.so.7.38.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaversion.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QuickParticles.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/liblber-2.5.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libx265.so.215 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libudev.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libharfbuzz.so.0.61232.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaflake.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Core.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Widgets.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libfontconfig.so.1.15.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritalibkis.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-glx.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKSeExprUI.so.4 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5PrintSupport.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libdeflate.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libOpenColorIO.so.2.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libzstd.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libmlt-7.so.7.38.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5OpenGL.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libjxl.so.0.11 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libjbig.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-shape.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5QuickControls2.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritamultiarch.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libbz2.so.1.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritalibkra.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libavutil.so.60 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libvpx.so.11 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpoppler.so.159 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritametadata.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5Crash.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libicui18n.so.70 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritapigment.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkrb5support.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libcap.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libfreetype.so.6.20.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libbrotlicommon.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libjxl_cms.so.0.11 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Quick.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libHalf-2_5.so.25 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libssl.so.3 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-render.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libicudata.so.70 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libldap-2.5.so.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libbrotlidec.so.1 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5DBus.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libk5crypto.so.3 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5X11Extras.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5ConfigGui.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libhogweed.so.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritaglobal.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libQt5Network.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libxcb-icccm.so.4 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libgssapi_krb5.so.2 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libtiff.so.6 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritawidgetutils.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libjson-c.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libfftw3.so.3.6.9 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritabasicflakes.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libquazip1-qt5.so.1.4.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libpq.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5Archive.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libavfilter.so.11 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libfribidi.so.0.4.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libkritawidgets.so.20.0.0 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libKF5ConfigCore.so.5 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/lib/libImath-2_5.so.25 used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtGraphicalEffects/private/libqtgraphicaleffectsprivate.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtGraphicalEffects/libqtgraphicaleffectsplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQml/Models.2/libmodelsplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQml/WorkerScript.2/libworkerscriptplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQml/StateMachine/libqtqmlstatemachine.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQml/libqmlplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Particles.2/libparticlesplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/LocalStorage/libqmllocalstorageplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls.2/Material/libqqc2materialstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls.2/Universal/libqtquickcontrols2universalstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls.2/Fusion/libqtquickcontrols2fusionstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls.2/Imagine/libqtquickcontrols2imaginestyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls.2/libqtquickcontrols2plugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Layouts/libqquicklayoutsplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Window.2/libwindowplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Templates.2/libqtquicktemplates2plugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls/Material/libqqc2materialstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls/Universal/libqtquickcontrols2universalstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls/Fusion/libqtquickcontrols2fusionstyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Controls/Imagine/libqtquickcontrols2imaginestyleplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick/Shapes/libqmlshapesplugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/usr/qml/QtQuick.2/libqtquick2plugin.so used for determining architecture x86_64
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir/AppRun used for determining architecture x86_64
+Using architecture x86_64
+Using app name extracted from desktop file: CanvasProject
+Generating squashfs...
+Parallel mksquashfs: Using 4 processors
+Creating 4.0 filesystem on CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage, block size 131072.
+[===========================================================|] 17987/17987 100%
+
+Exportable Squashfs 4.0 filesystem, zstd compressed, data block size 131072
+	compressed data, compressed metadata, compressed fragments,
+	compressed xattrs, compressed ids
+	duplicates are removed
+Filesystem size 332741.08 Kbytes (324.94 Mbytes)
+	34.04% of uncompressed filesystem size (977506.64 Kbytes)
+Inode table size 107126 bytes (104.62 Kbytes)
+	24.25% of uncompressed inode table size (441810 bytes)
+Directory table size 114606 bytes (111.92 Kbytes)
+	29.10% of uncompressed directory table size (393871 bytes)
+Number of duplicate files found 2635
+Number of inodes 12905
+Number of files 11966
+Number of fragments 1257
+Number of symbolic links 69
+Number of device nodes 0
+Number of fifo nodes 0
+Number of socket nodes 0
+Number of directories 870
+Number of hard-links 0
+Number of ids (unique uids + gids) 1
+Number of uids 1
+	root (0)
+Number of gids 1
+	root (0)
+Embedding ELF...
+Marking the AppImage as executable...
+Embedding MD5 digest
+zsyncmake is available and updateinformation is provided, hence generating zsync file
+Running zsyncmake process: '/home/runner/work/CanvasProject/CanvasProject/_install/appimage-tools/bin/zsyncmake' '-u' 'CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage' 'CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage' 
+Success
+
+Please consider submitting your AppImage to AppImageHub, the crowd-sourced
+central directory of available AppImages, by opening a pull request
+at https://github.com/AppImage/appimage.github.io
+/home/runner/work/CanvasProject/CanvasProject/_packaging/krita.appdir should be packaged as CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage
+Size of the embedded runtime: 944632 bytes
+updateinformation type: zsync
+ui_offset: 932112
+ui_length: 1024
+++ ls -1 CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage
+++ head -1
++ OLD_APPIMAGE_NAME=CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage
++ '[' -n CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage ']'
++ '[' CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage = krita-5.4.0-prealpha-b733c90-x86_64.AppImage ']'
++ mv CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage krita-5.4.0-prealpha-b733c90-x86_64.AppImage
++ rm -f CanvasProject-5.4.0-prealpha-b733c90-x86_64.AppImage.zsync
++ zsyncmake -u https://autoconfig.kde.org/krita/updates/next/linux/krita-5.4.0-prealpha-b733c90-x86_64.AppImage krita-5.4.0-prealpha-b733c90-x86_64.AppImage
++ mv krita-5.4.0-prealpha-b733c90-x86_64.AppImage.zsync Krita-Next-x86_64.appimage.zsync

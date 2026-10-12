@@ -1,0 +1,12 @@
+/home/runner/work/CanvasProject/CanvasProject/_packaging:
+total 334252
+drwxr-xr-x  2 runner runner      4096 Oct 12 14:22 .
+drwxr-xr-x 32 runner runner      4096 Oct 12 14:22 ..
+-rw-r--r--  1 runner runner    584231 Oct 12 14:22 Krita-Next-x86_64.appimage.zsync
+-rwxr-xr-x  1 runner runner 341674488 Oct 12 14:22 krita-5.4.0-prealpha-b733c90-x86_64.AppImage
+
+/home/runner/work/CanvasProject/CanvasProject/_staging:
+total 12
+drwxr-xr-x  3 runner runner 4096 Oct 12 14:13 .
+drwxr-xr-x 32 runner runner 4096 Oct 12 14:22 ..
+drwxr-xr-x  3 runner runner 4096 Oct 12 14:13 home
