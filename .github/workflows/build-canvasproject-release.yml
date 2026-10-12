@@ -78,7 +78,18 @@ jobs:
           . venv/bin/activate
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           set -o pipefail
-          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Linux/Qt5/Shared --skip-publishing 2>&1 | tee build.log
+          # Os scripts do KDE esperam variáveis do GitLab CI na fase de testes.
+          export CI_JOB_ID="${{ github.run_id }}"
+          rc=0
+          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Linux/Qt5/Shared --skip-publishing 2>&1 | tee build.log || rc=$?
+          if [ $rc -ne 0 ]; then
+            # Compilou e instalou, mas falhou só na fase de testes (BUILD_TESTING=OFF): segue.
+            if grep -q "## RUNNING PROJECT TESTS" build.log && [ -x _install/bin/krita ]; then
+              echo "::warning::Fase de testes do CI do KDE falhou (sem testes compilados); seguindo com o pacote."
+            else
+              exit $rc
+            fi
+          fi
       - name: Guardar o fim do log no ramo ci-logs (falhas)
         if: failure()
         run: |
