@@ -403,8 +403,10 @@ linuxdeployqt $APPDIR/usr/share/applications/org.kde.krita.desktop \
 
 # Generate a new name for the Appimage file and rename it accordingly
 
-OLD_APPIMAGE_NAME="Krita-${VERSION}-${APPIMAGE_ARCHITECTURE}.AppImage"
-mv ${OLD_APPIMAGE_NAME} ${NEW_APPIMAGE_NAME}
+# CanvasProject: o linuxdeployqt usa o nome do .desktop (CanvasProject), não "Krita".
+OLD_APPIMAGE_NAME=$(ls -1 *-${VERSION}-${APPIMAGE_ARCHITECTURE}.AppImage 2>/dev/null | head -1)
+[ -n "${OLD_APPIMAGE_NAME}" ] || OLD_APPIMAGE_NAME="Krita-${VERSION}-${APPIMAGE_ARCHITECTURE}.AppImage"
+[ "${OLD_APPIMAGE_NAME}" = "${NEW_APPIMAGE_NAME}" ] || mv "${OLD_APPIMAGE_NAME}" "${NEW_APPIMAGE_NAME}"
 
 # TODO: when signing is implemented, make sure the package is signed **before**
 #       the zsync file is generated (since singing changes the packages)
