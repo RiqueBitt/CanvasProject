@@ -73,6 +73,12 @@ jobs:
           pip install -r krita-deps-management/requirements.txt
           python3 -u krita-deps-management/tools/replace-branch-in-seed-file.py krita-deps-management/latest/krita-deps.yml -p -o branch-corrected-deps.yml -d master
           python3 -u krita-deps-management/tools/generate-deps-file.py -s branch-corrected-deps.yml -o .kde-ci.yml
+      - name: Restaurar cache de compilação (ccache)
+        uses: actions/cache/restore@v4
+        with:
+          path: _cache/cc
+          key: ccache-linux-${{ github.run_id }}
+          restore-keys: ccache-linux-
       - name: Compilar
         run: |
           . venv/bin/activate
@@ -90,6 +96,12 @@ jobs:
               exit $rc
             fi
           fi
+      - name: Salvar cache de compilação (ccache)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: _cache/cc
+          key: ccache-linux-${{ github.run_id }}
       - name: Guardar o fim do log no ramo ci-logs (falhas)
         if: failure()
         run: |
@@ -100,9 +112,12 @@ jobs:
           git add -A && git commit -q -m "log linux run ${{ github.run_id }}"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-logs
       - name: AppImage
+        env:
+          KRITACI_ALLOW_NO_PYQT: 'True'
         run: |
           . venv/bin/activate
-          python3 -u build-tools/ci-scripts/build-appimage.py
+          set -o pipefail
+          python3 -u build-tools/ci-scripts/build-appimage.py 2>&1 | tee appimage.log
           APP=$(ls _packaging/*.appimage _packaging/*.AppImage 2>/dev/null | head -1)
           test -n "$APP" || { ls -la _packaging || true; exit 1; }
           mkdir -p dist && cp "$APP" dist/CanvasProject.AppImage && chmod +x dist/CanvasProject.AppImage
@@ -124,6 +139,15 @@ jobs:
           rm CanvasProject.AppImage
           ARCH=x86_64 /tmp/appimagetool --appimage-extract-and-run squashfs-root CanvasProject.AppImage
           rm -rf squashfs-root && chmod +x CanvasProject.AppImage && du -h CanvasProject.AppImage
+      - name: Guardar o log do AppImage no ramo ci-logs (falhas)
+        if: failure()
+        run: |
+          mkdir -p /tmp/alog && cd /tmp/alog
+          tail -250 "$GITHUB_WORKSPACE/appimage.log" > appimage-fim.txt 2>/dev/null || echo "sem log" > appimage-fim.txt
+          ls -la "$GITHUB_WORKSPACE/_packaging" "$GITHUB_WORKSPACE/_staging" > pastas.txt 2>&1 || true
+          git init -q -b ci-logs && git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -q -m "log appimage run ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-logs
       - uses: actions/upload-artifact@v4
         with:
           name: canvasproject-linux
