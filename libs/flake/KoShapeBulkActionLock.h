@@ -12,6 +12,7 @@
 #include <KisAdaptedLock.h>
 #include <QList>
 #include <QRect>
+#include <vector>
 
 class KoShape;
 struct KoShapeBulkActionInterface;

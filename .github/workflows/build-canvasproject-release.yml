@@ -135,7 +135,13 @@ jobs:
       - name: Compilador llvm-mingw (o mesmo tipo usado pelo Krita)
         shell: pwsh
         run: |
-          $rel = Invoke-RestMethod https://api.github.com/repos/mstorsjo/llvm-mingw/releases/latest
+          # Mesma série do compilador usado pelo CI do Krita (clang 21): as
+          # dependências prontas do KDE (Qt, KF6...) foram compiladas com ela.
+          $headers = @{ Authorization = "Bearer ${{ github.token }}" }
+          $rels = Invoke-RestMethod -Headers $headers 'https://api.github.com/repos/mstorsjo/llvm-mingw/releases?per_page=100'
+          $rel = $rels | Where-Object { -not $_.prerelease -and $_.name -match 'LLVM 21\.' } | Select-Object -First 1
+          if (-not $rel) { throw 'Não encontrei um llvm-mingw com LLVM 21' }
+          Write-Host "Usando $($rel.name)"
           $asset = $rel.assets | Where-Object { $_.name -like '*-ucrt-x86_64.zip' } | Select-Object -First 1
           Invoke-WebRequest $asset.browser_download_url -OutFile llvm.zip
           Expand-Archive llvm.zip -DestinationPath C:\
