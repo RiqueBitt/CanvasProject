@@ -5,16 +5,18 @@ APP="$(readlink -f "$1")"; OUT="$(mkdir -p "$2" && readlink -f "$2")"
 export DISPLAY=:99 APPIMAGE_EXTRACT_AND_RUN=1 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1
 Xvfb :99 -screen 0 1600x1000x24 -nolisten tcp &
 sleep 2
+(command -v openbox >/dev/null && DISPLAY=:99 openbox >/dev/null 2>&1 &)
+sleep 2
 n=0
 shot() { n=$((n+1)); sleep "${2:-3}"; import -window root "$(printf '%s/%02d-%s.png' "$OUT" "$n" "$1")"; echo "captura $n: $1"; }
-key() { xdotool key --clearmodifiers "$@"; }
+key() { timeout 10 xdotool key --clearmodifiers "$@"; }
 stroke() { xdotool mousemove "$1" "$2" mousedown 1; for i in $(seq 1 30); do
   xdotool mousemove $(( $1 + ($3-$1)*i/30 )) $(( $2 + ($4-$2)*i/30 + (i%7)*4 )); sleep 0.02; done; xdotool mouseup 1; }
 "$APP" > "$OUT/app.log" 2>&1 &
 APP_PID=$!
 sleep 50
-W=$(xdotool search --onlyvisible --name "CanvasProject" | tail -1)
-[ -n "$W" ] && xdotool windowactivate --sync "$W" windowsize "$W" 1600 1000 windowmove "$W" 0 0
+W=$(timeout 10 xdotool search --onlyvisible --name "CanvasProject" | tail -1)
+[ -n "$W" ] && timeout 10 xdotool windowfocus "$W" windowsize "$W" 1600 1000 windowmove "$W" 0 0
 shot tela-de-boas-vindas 4
 key ctrl+n; shot novo-documento 4
 key Return; shot tela-em-branco 6
