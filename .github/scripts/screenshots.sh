@@ -2,7 +2,8 @@
 # Abre o CanvasProject de verdade numa tela virtual e captura telas reais.
 set -u
 APP="$(readlink -f "$1")"
-chmod +x "$APP" 2>/dev/null  # o artefato do Actions perde o bit de execução; OUT="$(mkdir -p "$2" && readlink -f "$2")"
+OUT="$(mkdir -p "$2" && readlink -f "$2")"
+chmod +x "$APP" 2>/dev/null  # o artefato do Actions perde o bit de execução
 export DISPLAY=:99 APPIMAGE_EXTRACT_AND_RUN=1 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1
 Xvfb :99 -screen 0 1600x1000x24 -nolisten tcp >/dev/null 2>&1 &
 sleep 2
