@@ -194,10 +194,17 @@ jobs:
         shell: pwsh
         run: |
           . venv\Scripts\Activate.ps1
+          # Fora do GitLab do KDE não existe CI_COMMIT_SHORT_SHA: usa a nomeação
+          # de release e pula o pacote de depuração.
+          $env:KRITACI_RELEASE_PACKAGE_NAMING = '1'
+          $env:KRITACI_SKIP_DEBUG_PACKAGE = '1'
           python -u build-tools/ci-scripts/build-windows-package.py
-          $exe = Get-ChildItem -Path . -Recurse -Filter krita.exe | Where-Object { $_.FullName -notmatch '_build' } | Select-Object -First 1
-          if (-not $exe) { throw "krita.exe não encontrado" }
-          $root = Split-Path $exe.DirectoryName -Parent
+          if ($LASTEXITCODE -ne 0) { throw "o empacotamento do Krita falhou ($LASTEXITCODE)" }
+          $pkg = Get-ChildItem -Path . -Directory -Filter 'krita-x64-*' | Select-Object -First 1
+          if (-not $pkg) { Get-ChildItem; throw "pasta do pacote (krita-x64-*) não encontrada" }
+          $exe = Get-Item (Join-Path $pkg.FullName 'bin\krita.exe') -ErrorAction SilentlyContinue
+          if (-not $exe) { throw "krita.exe não encontrado em $($pkg.FullName)\bin" }
+          $root = $pkg.FullName
           Copy-Item $exe.FullName (Join-Path $exe.DirectoryName 'CanvasProject.exe')
           New-Item -ItemType Directory -Force dist | Out-Null
           Compress-Archive -Path "$root\*" -DestinationPath "dist\CanvasProject-${{ inputs.version }}-win.zip"
