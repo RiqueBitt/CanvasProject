@@ -3,7 +3,7 @@
 set -u
 APP="$(readlink -f "$1")"; OUT="$(mkdir -p "$2" && readlink -f "$2")"
 export DISPLAY=:99 APPIMAGE_EXTRACT_AND_RUN=1 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1
-Xvfb :99 -screen 0 1600x1000x24 -nolisten tcp &
+Xvfb :99 -screen 0 1600x1000x24 -nolisten tcp >/dev/null 2>&1 &
 sleep 2
 (command -v openbox >/dev/null && DISPLAY=:99 openbox >/dev/null 2>&1 &)
 sleep 2
@@ -38,3 +38,5 @@ xdotool mousemove 800 20 click 1; shot menu 3
 key Escape
 kill $APP_PID 2>/dev/null; sleep 1
 ls -la "$OUT"
+# encerra a tela virtual e o gerenciador de janelas
+pkill openbox 2>/dev/null; pkill -f "Xvfb :99" 2>/dev/null; true
