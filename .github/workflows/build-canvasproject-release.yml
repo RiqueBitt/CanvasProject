@@ -18,6 +18,11 @@ on:
         description: 'Publicar a release'
         type: boolean
         default: true
+      platforms:
+        description: 'Plataformas a compilar'
+        type: choice
+        options: [ambas, linux, windows]
+        default: ambas
 
 env:
   KDECI_BUILD_TYPE: Release
@@ -31,6 +36,7 @@ env:
 
 jobs:
   linux:
+    if: ${{ inputs.platforms != 'windows' }}
     runs-on: ubuntu-22.04
     permissions:
       contents: write
@@ -51,6 +57,13 @@ jobs:
             libgl1-mesa-dev libglu1-mesa-dev libegl1-mesa-dev libxi-dev libxrender-dev libxkbcommon-dev libxkbcommon-x11-dev \
             libfontconfig1-dev libfreetype6-dev libx11-xcb-dev libxcb1-dev libxcb-*-dev libdbus-1-dev libasound2-dev \
             libpulse-dev libxcursor-dev libxrandr-dev libxinerama-dev libwayland-dev libfuse2 desktop-file-utils appstream
+          # As dependências pré-compiladas do KDE (ex.: KF5CoreAddons) foram feitas com
+          # GCC 13 e pedem GLIBCXX_3.4.32, que o GCC 11 do Ubuntu 22.04 não tem.
+          sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq gcc-13 g++-13
+          echo "CC=gcc-13" >> "$GITHUB_ENV"
+          echo "CXX=g++-13" >> "$GITHUB_ENV"
       - name: Scripts e dependências do CI do Krita
         run: |
           git clone https://invent.kde.org/packaging/krita-deps-management.git -b master --depth=1
@@ -83,6 +96,23 @@ jobs:
           test -n "$APP" || { ls -la _packaging || true; exit 1; }
           mkdir -p dist && cp "$APP" dist/CanvasProject.AppImage && chmod +x dist/CanvasProject.AppImage
           du -h dist/CanvasProject.AppImage
+      - name: Incluir a libstdc++ do GCC 13 no AppImage
+        # Sem ela o AppImage não abre no Ubuntu 22.04 e em distribuições mais antigas.
+        run: |
+          set -e
+          STDCXX=$(g++-13 -print-file-name=libstdc++.so.6); GCCS=$(g++-13 -print-file-name=libgcc_s.so.1)
+          strings "$STDCXX" | grep -q GLIBCXX_3.4.32
+          cd dist && rm -rf squashfs-root
+          ./CanvasProject.AppImage --appimage-extract >/dev/null
+          LIBDIR=$(dirname "$(find squashfs-root -name 'libQt5Core.so.5*' | head -1)")
+          echo "pasta das bibliotecas: $LIBDIR"
+          cp -L "$STDCXX" "$LIBDIR/libstdc++.so.6"
+          [ -e "$GCCS" ] && cp -L "$GCCS" "$LIBDIR/libgcc_s.so.1" || true
+          wget -q https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage -O /tmp/appimagetool
+          chmod +x /tmp/appimagetool
+          rm CanvasProject.AppImage
+          ARCH=x86_64 /tmp/appimagetool --appimage-extract-and-run squashfs-root CanvasProject.AppImage
+          rm -rf squashfs-root && chmod +x CanvasProject.AppImage && du -h CanvasProject.AppImage
       - uses: actions/upload-artifact@v4
         with:
           name: canvasproject-linux
@@ -130,6 +160,7 @@ jobs:
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" capturas
 
   windows:
+    if: ${{ inputs.platforms != 'linux' }}
     runs-on: windows-2022
     permissions:
       contents: write
@@ -215,7 +246,7 @@ jobs:
           path: dist/*.zip
 
   release:
-    if: ${{ inputs.publish }}
+    if: ${{ inputs.publish && inputs.platforms == 'ambas' }}
     needs: [linux, windows, screenshots]
     runs-on: ubuntu-latest
     permissions:
