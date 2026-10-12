@@ -32,6 +32,8 @@ env:
 jobs:
   linux:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     timeout-minutes: 360
     env:
       KDECI_CC_CACHE: ${{ github.workspace }}/_cache/cc
@@ -62,7 +64,17 @@ jobs:
         run: |
           . venv/bin/activate
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
-          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Linux/Qt5/Shared --skip-publishing
+          set -o pipefail
+          python3 -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Linux/Qt5/Shared --skip-publishing 2>&1 | tee build.log
+      - name: Guardar o fim do log no ramo ci-logs (falhas)
+        if: failure()
+        run: |
+          mkdir -p /tmp/logs && cd /tmp/logs
+          grep -n -B2 -A12 -E "error:|Error |FAILED|CMake Error|fatal" "$GITHUB_WORKSPACE/build.log" | tail -400 > linux-erros.txt || true
+          tail -300 "$GITHUB_WORKSPACE/build.log" > linux-fim.txt
+          git init -q -b ci-logs && git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -q -m "log linux run ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-logs
       - name: AppImage
         run: |
           . venv/bin/activate
@@ -119,6 +131,8 @@ jobs:
 
   windows:
     runs-on: windows-2022
+    permissions:
+      contents: write
     timeout-minutes: 360
     env:
       KDECI_CC_CACHE: C:\_kci\cc
@@ -164,7 +178,18 @@ jobs:
         run: |
           . venv\Scripts\Activate.ps1
           git config --global --add safe.directory $env:GITHUB_WORKSPACE
-          python -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Windows/Qt6/Shared --skip-publishing
+          python -u krita-deps-management/ci-utilities/run-ci-build.py --project krita --branch master --platform Windows/Qt6/Shared --skip-publishing 2>&1 | Tee-Object -FilePath build.log
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Guardar o fim do log no ramo ci-logs-windows (falhas)
+        if: failure()
+        shell: bash
+        run: |
+          mkdir -p /tmp/logs && cd /tmp/logs
+          grep -n -B2 -A12 -E "error:|Error |FAILED|CMake Error|fatal" "$GITHUB_WORKSPACE/build.log" | tail -400 > windows-erros.txt || true
+          tail -300 "$GITHUB_WORKSPACE/build.log" > windows-fim.txt
+          git init -q -b ci-logs-windows && git config user.name ci && git config user.email ci@users.noreply.github.com
+          git add -A && git commit -q -m "log windows run ${{ github.run_id }}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-logs-windows
       - name: Pacote
         shell: pwsh
         run: |
