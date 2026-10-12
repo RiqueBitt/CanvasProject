@@ -1,0 +1,27 @@
+captura 1: tela-de-boas-vindas
+captura 2: novo-documento
+captura 3: tela-em-branco
+captura 4: pinceladas
+captura 5: borracha
+captura 6: predefinicoes-de-pincel
+captura 7: nova-camada
+captura 8: rotacao-da-tela
+captura 9: modo-tela-cheia
+captura 10: ajuste-de-curvas
+captura 11: menu
+total 1436
+drwxr-xr-x 2 runner runner   4096 Oct 12 14:51 .
+drwxr-xr-x 6 runner runner   4096 Oct 12 14:50 ..
+-rw-r--r-- 1 runner runner  72187 Oct 12 14:51 01-tela-de-boas-vindas.png
+-rw-r--r-- 1 runner runner 128175 Oct 12 14:51 02-novo-documento.png
+-rw-r--r-- 1 runner runner 113769 Oct 12 14:51 03-tela-em-branco.png
+-rw-r--r-- 1 runner runner 138849 Oct 12 14:51 04-pinceladas.png
+-rw-r--r-- 1 runner runner 139146 Oct 12 14:51 05-borracha.png
+-rw-r--r-- 1 runner runner 281238 Oct 12 14:51 06-predefinicoes-de-pincel.png
+-rw-r--r-- 1 runner runner 139146 Oct 12 14:51 07-nova-camada.png
+-rw-r--r-- 1 runner runner 137258 Oct 12 14:51 08-rotacao-da-tela.png
+-rw-r--r-- 1 runner runner  35502 Oct 12 14:51 09-modo-tela-cheia.png
+-rw-r--r-- 1 runner runner 110826 Oct 12 14:51 10-ajuste-de-curvas.png
+-rw-r--r-- 1 runner runner 137588 Oct 12 14:52 11-menu.png
+-rw-r--r-- 1 runner runner   5307 Oct 12 14:51 app.log
+-rw-r--r-- 1 runner runner    283 Oct 12 14:52 run.log

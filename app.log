@@ -1,0 +1,75 @@
+Unable to revert mtime: /usr/share/fonts
+Unable to revert mtime: /usr/share/fonts/truetype
+Unable to revert mtime: /usr/share/fonts/truetype/dejavu
+Unable to revert mtime: /usr/share/fonts/truetype/lato
+Unable to revert mtime: /usr/share/fonts/truetype/liberation
+Unable to revert mtime: /usr/share/fonts/truetype/noto
+krita.db.migration: Completed DB update step: "Create table version_information"
+krita.db.migration: Completed DB update step: "Create table storage_types"
+krita.db.migration: Completed DB update step: "Create table resource_types"
+krita.db.migration: Completed DB update step: "Create table storages"
+krita.db.migration: Completed DB update step: "Create table tags"
+krita.db.migration: Completed DB update step: "Create table resources"
+krita.db.migration: Completed DB update step: "Create table versioned_resources"
+krita.db.migration: Completed DB update step: "Create table resource_tags"
+krita.db.migration: Completed DB update step: "Create table metadata"
+krita.db.migration: Completed DB update step: "Create table tags_storages"
+krita.db.migration: Completed DB update step: "Create table tag_translations"
+krita.db.migration: Completed DB update step: "Update metadata table constraints"
+krita.db.migration: Completed DB update step: "Create index for storages"
+krita.db.migration: Completed DB update step: "Create index for versioned_resources"
+krita.db.migration: Completed DB update step: "Create index for tags"
+krita.db.migration: Completed DB update step: "Create index for resources"
+krita.db.migration: Completed DB update step: "Create index for tag_translations"
+krita.db.migration: Completed DB update step: "Create index for resource_tags"
+krita.db.migration: Completed DB update step: "Create index for resources_signature"
+krita.db.migration: Completed DB update step: "Create index for metadata_key"
+krita.db.migration: Completed DB update step: "Register storage type: Unknown"
+krita.db.migration: Completed DB update step: "Register storage type: Folder"
+krita.db.migration: Completed DB update step: "Register storage type: Bundle"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Brush Library"
+krita.db.migration: Completed DB update step: "Register storage type: Adobe Style Library"
+krita.db.migration: Completed DB update step: "Register storage type: Memory"
+krita.db.migration: Completed DB update step: "Register storage type: Font Storage"
+krita.db.migration: Completed DB update step: "Register resource type: brushes"
+krita.db.migration: Completed DB update step: "Register resource type: css_styles"
+krita.db.migration: Completed DB update step: "Register resource type: fontfamilies"
+krita.db.migration: Completed DB update step: "Register resource type: gamutmasks"
+krita.db.migration: Completed DB update step: "Register resource type: gradients"
+krita.db.migration: Completed DB update step: "Register resource type: layerstyles"
+krita.db.migration: Completed DB update step: "Register resource type: paintoppresets"
+krita.db.migration: Completed DB update step: "Register resource type: palettes"
+krita.db.migration: Completed DB update step: "Register resource type: patterns"
+krita.db.migration: Completed DB update step: "Register resource type: seexpr_scripts"
+krita.db.migration: Completed DB update step: "Register resource type: sessions"
+krita.db.migration: Completed DB update step: "Register resource type: symbols"
+krita.db.migration: Completed DB update step: "Register resource type: tasksets"
+krita.db.migration: Completed DB update step: "Register resource type: windowlayouts"
+krita.db.migration: Completed DB update step: "Register resource type: workspaces"
+krita.db.migration: Filled version table
+QObject::startTimer: Timers cannot have negative intervals
+Could not find platform independent libraries <prefix>
+Could not find platform dependent libraries <exec_prefix>
+/tmp/appimage_extracted_db8d431579de916d15fedecde4f6d142/usr/lib/krita-python-libs/krita added to PYTHONPATH
+krita.action: propertizeAction: No XML data found for action "interpolation_constant"
+krita.action: propertizeAction: No XML data found for action "interpolation_linear"
+krita.action: propertizeAction: No XML data found for action "interpolation_bezier"
+krita.action: propertizeAction: No XML data found for action "tangents_sharp"
+krita.action: propertizeAction: No XML data found for action "tangents_smooth"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_range"
+krita.action: propertizeAction: No XML data found for action "zoom_to_fit_curve"
+krita.action: propertizeAction: No XML data found for action "color_space"
+krita.action: propertizeAction: No XML data found for action "document_tools"
+krita.action: propertizeAction: No XML data found for action "export_layers"
+krita.action: propertizeAction: No XML data found for action "filter_manager"
+krita.action: propertizeAction: No XML data found for action "python_scripter"
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+qrc:/OpenTypeFeatureDelegate.qml:113:5: QML ToolTipBase: cannot find any window to open popup in.
+The imageRectInWidgetPixels topLeft() does not match the documentOffsetF!
+    imageRectInWidgetPixels: QRectF(-0.6,-0.6 0x0)
+    documentOffsetF: QPointF(1,1)
+The X11 connection broke: I/O error (code 1)
+X connection to :99 broken (explicit kill or server shutdown).
+krita.general: Warning: some tiles have leaked:
+krita.general: 	Tiles in memory: 2821 
+ 	Total tiles: 2821
