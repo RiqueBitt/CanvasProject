@@ -122,23 +122,40 @@ jobs:
           test -n "$APP" || { ls -la _packaging || true; exit 1; }
           mkdir -p dist && cp "$APP" dist/CanvasProject.AppImage && chmod +x dist/CanvasProject.AppImage
           du -h dist/CanvasProject.AppImage
+      - uses: actions/upload-artifact@v4
+        # Cópia do AppImage como saiu da compilação: se o passo seguinte falhar,
+        # dá para reaproveitar sem compilar tudo de novo.
+        with:
+          name: canvasproject-linux-bruto
+          path: dist/CanvasProject.AppImage
+          retention-days: 7
       - name: Incluir a libstdc++ do GCC 13 no AppImage
         # Sem ela o AppImage não abre no Ubuntu 22.04 e em distribuições mais antigas.
+        # Se algo aqui der errado, segue com o AppImage original em vez de perder a build.
+        continue-on-error: true
+        shell: bash
         run: |
-          set -e
+          set -eu
           STDCXX=$(g++-13 -print-file-name=libstdc++.so.6); GCCS=$(g++-13 -print-file-name=libgcc_s.so.1)
-          strings "$STDCXX" | grep -q GLIBCXX_3.4.32
-          cd dist && rm -rf squashfs-root
+          echo "libstdc++: $STDCXX"
+          cd dist && rm -rf squashfs-root && cp CanvasProject.AppImage /tmp/original.AppImage
           ./CanvasProject.AppImage --appimage-extract >/dev/null
-          LIBDIR=$(dirname "$(find squashfs-root -name 'libQt5Core.so.5*' | head -1)")
+          CORE=$(find squashfs-root -name 'libQt*Core.so*' -print -quit)
+          LIBDIR=$(dirname "${CORE:-squashfs-root/usr/lib/x}")
           echo "pasta das bibliotecas: $LIBDIR"
           cp -L "$STDCXX" "$LIBDIR/libstdc++.so.6"
-          [ -e "$GCCS" ] && cp -L "$GCCS" "$LIBDIR/libgcc_s.so.1" || true
+          if [ -e "$GCCS" ]; then cp -L "$GCCS" "$LIBDIR/libgcc_s.so.1"; fi
           wget -q https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage -O /tmp/appimagetool
           chmod +x /tmp/appimagetool
-          rm CanvasProject.AppImage
-          ARCH=x86_64 /tmp/appimagetool --appimage-extract-and-run squashfs-root CanvasProject.AppImage
+          ARCH=x86_64 /tmp/appimagetool --appimage-extract-and-run squashfs-root /tmp/novo.AppImage
+          mv /tmp/novo.AppImage CanvasProject.AppImage
           rm -rf squashfs-root && chmod +x CanvasProject.AppImage && du -h CanvasProject.AppImage
+      - name: Garantir o AppImage final
+        shell: bash
+        run: |
+          cd dist && rm -rf squashfs-root
+          [ -s CanvasProject.AppImage ] || cp /tmp/original.AppImage CanvasProject.AppImage
+          chmod +x CanvasProject.AppImage && du -h CanvasProject.AppImage
       - name: Guardar o log do AppImage no ramo ci-logs (falhas)
         if: failure()
         run: |
